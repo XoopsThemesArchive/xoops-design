@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC '-//W3C//DTD XHTML 1.0 Transitional//EN' 'http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd'>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<html>
+<head>
+<meta name="robots" content="<{$xoops_meta_robots}>">
+<meta name="keywords" content="<{$xoops_meta_keywords}>">
+<meta name="description" content="<{$xoops_meta_description}>. <{$xoops_pagetitle}>">
+<meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>">
+<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_url}>/xoops.css">
+<link rel="stylesheet" type="text/css" media="screen" href="<{$xoops_themecss}>">
+<title><{$xoops_pagetitle}> avec <{$xoops_sitename}></title>
+<!-- RMV:  added module header -->
+<{$xoops_module_header}>
+
+<script language="JavaScript">
+<!--
+
+function SymError()
+{
+  return true;
+}
+
+window.onerror = SymError;
+
+var SymRealWinOpen = window.open;
+
+function SymWinOpen(url, name, attributes)
+{
+  return (new Object());
+}
+
+window.open = SymWinOpen;
+
+//-->
+</script>
+
+<script type="text/javascript">
+<!--
+<{$xoops_js}>
+//-->
+
+</script>
+</head>
+
+
+<body>
+
+<div id="englobe">
+	<div id="header">
+		<a href="#" id="lien1"></a>
+	<a href="#" id="lien2"></a>
+	</div>
+	<div id="page">
+
+		<table cellpadding="0" cellspacing="0" width="656"><tr><td style="width:456px;padding-right:20px;">
+	<{foreach item=block from=$xoops_ccblocks}><{include file="xoops-design/menu_centre.html"}><{/foreach}><{$xoops_contents}></td><td>
+	<{foreach item=block from=$xoops_lblocks}><{include file="xoops-design/menu_droit.html"}><{/foreach}>
+
+
+
+</td></tr></table>	</div>
+	<div class="end"></div>
+	<div class="" style="width: 752px; height: 10px;" >
+
+	</div>
+	<div id="page" style="width:752px;height: auto;background: url('i/englobe.gif') repeat-y">
+	
+		<p class="conrfoot" style="position: relative; width: 228px; margin-top:-15px;margin-left: 433px">
+<{$xoops_footer}></p></div>
+<div class="footerneu"></div>
+</div>
+</body>
+</html>
+<script language="JavaScript">
+<!--
+var SymRealOnLoad;
+var SymRealOnUnload;
+
+function SymOnUnload()
+{
+  window.open = SymWinOpen;
+  if(SymRealOnUnload != null)
+     SymRealOnUnload();
+}
+
+function SymOnLoad()
+{
+  if(SymRealOnLoad != null)
+     SymRealOnLoad();
+  window.open = SymRealWinOpen;
+  SymRealOnUnload = window.onunload;
+  window.onunload = SymOnUnload;
+}
+
+SymRealOnLoad = window.onload;
+window.onload = SymOnLoad;
+
+//-->
+</script>
+
